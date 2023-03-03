@@ -1,0 +1,30 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <math.h>
+int armstrong(){
+    int n;
+    scanf("%d",&n);
+    int temp=n,c,sum=0,m=n,count=0;
+    //checking the count of the entered digits
+    while (m>0){
+        m=m/10;
+        count+=1;
+    }
+    while (temp>0){
+        //getting every single digit using this.
+        c=temp%10;
+        sum=sum+pow(c,count);
+        temp=temp/10;
+    }
+    if (sum==n){
+        printf("Armstong no");
+    }else{
+        printf("Not Armstrong no");
+    }
+}
+
+int main() {
+    armstrong();
+
+    return 0;
+}
