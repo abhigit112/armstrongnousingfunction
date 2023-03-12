@@ -1,7 +1,7 @@
 // Online C compiler to run C program online
 #include <stdio.h>
 #include <math.h>
-int armstrong(){
+int armstrong(void){
     int n;
     scanf("%d",&n);
     int temp=n,c,sum=0,m=n,count=0;
@@ -26,5 +26,5 @@ int armstrong(){
 int main() {
     armstrong();
 
-    return 0;
+    
 }
